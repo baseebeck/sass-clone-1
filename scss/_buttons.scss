@@ -1,0 +1,41 @@
+%btn {
+    display: inline-block;
+    border-radius: 35px;
+    padding: 18px 20px;
+    margin: 3px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+
+    &:hover {
+        transform: scale(0.98);
+        cursor: pointer;
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    @include set-background($primary-color);
+    opacity: 0.8;
+    margin-right: 1.5rem;
+
+    &:hover {
+        // @include set-background(lighten($primary-color, 10%));
+        opacity: 1;
+    }
+}
+
+.btn-secondary {
+    @extend %btn;
+    @include set-background($light-color);
+    color: $primary-color;
+    opacity: 0.8;
+
+    &:hover {
+        // @include set-background(darken($light-color, 20%));
+        opacity: 1;
+    }
+   
+}
