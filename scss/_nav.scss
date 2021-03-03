@@ -102,15 +102,23 @@ nav {
             }
     
             &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-                color: $dark-color;
+                color: darken($dark-color, 10%);
+                font-weight: 600;
+                font-size: 0.7rem;
+                opacity: 1;
+                text-transform: uppercase;
             }
               
             &::-ms-input-placeholder { /* Microsoft Edge */
-                color: $dark-color;
+                color: darken($dark-color, 10%);
+                font-weight: 600;
+                font-size: 0.7rem;
+                opacity: 1;
+                text-transform: uppercase;
             }
 
             &:focus {
-                box-shadow: 0 0 5px 1px rgba(250,250,250,0.3);
+                box-shadow: 0 0 7px 2px rgba(250,250,250,0.5);
             }
         }
     }
@@ -135,5 +143,9 @@ nav {
         font-size: 0.9rem;
         color: $light-color;
         font-weight: bold;
+
+        &:hover {
+            color: $primary-color;
+        }
     }
 }
