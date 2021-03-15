@@ -9,6 +9,10 @@ section {
     overflow: auto;
 }
 
+.hidden { 
+    display: none;
+}
+
 // Margin & padding classes
 $spaceamounts: (1,2,3,4,5);
 

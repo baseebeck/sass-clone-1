@@ -117,18 +117,6 @@ p {
         }
     }
 
-    .s1-carousel {
-        width: 50%;
-        text-align: center;
-
-        h3 {
-            font-size: 1.8rem;
-            font-weight: 300;
-            letter-spacing: 0.1rem;
-            text-transform: uppercase;
-        }
-          
-    }
 }
 
 #section-2 {
@@ -308,3 +296,4 @@ footer {
  @import 'nav';
  @import 'buttons';
  @import 'utilities';
+ @import 'carousel';

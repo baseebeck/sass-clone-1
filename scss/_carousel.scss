@@ -1,0 +1,78 @@
+.s1-carousel-content {
+    text-align: center;
+    width: 50%;
+    mask-image: linear-gradient(to right, transparent 1%, black 10%, black 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 1%, black 10%, black 100%);
+
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+    }
+
+    .carousel {
+        display: inline;
+        position: relative;
+
+    
+    
+        .card {
+            background-color: #fff;
+            box-shadow: 1px 5px 15px 1px rgba(0,0,0,0.1);
+            padding: 1.5rem 2rem;
+            width: 300px;
+            height: 375px;
+            margin: 1.5rem auto 0;
+    
+            img {
+                width: 150px;
+            }
+    
+            h4 {
+                color: $primary-color;
+                margin: 1rem 0 0.5rem;
+            }
+    
+            p {
+                font-size: 0.8rem;
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+        }
+    
+        .next-card, .previous-card {
+            opacity: 0.6;
+            position: absolute;
+            transform: scale(0.8);
+        }
+
+        .next-card {
+            left: 150px;
+            top: 0;
+            // mask-image: linear-gradient(to left, transparent 30%, black 100%);
+            // -webkit-mask-image: linear-gradient(to left, transparent 30%, black 100%);
+        }
+
+        .previous-card {
+            right: 150px;
+            top: 0;
+        }
+
+    }
+
+
+
+    i {
+        color: $primary-color;
+        margin-top: 2rem;
+    }
+
+    .slider-counter {
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 0 2rem;
+    }
+      
+}
+

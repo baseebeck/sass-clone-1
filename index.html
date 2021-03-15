@@ -55,19 +55,42 @@
                   of the most inspiring patients around the world.</p>
             <a href="#" class="btn-3">View Full Timeline</a>
         </div>
-        <div class="container s1-carousel">
+        <div class="container s1-carousel-content">
             <h3><strong>5</strong> Physicians. <strong>24</strong> Hours.</h3>
-            <!-- <p><code>wrapAround: true</code></p> -->
-
-            <!-- Flickity HTML init -->
-            <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "cellAlign": "left", "contain": true }'>
-                <div class="gallery-cell"></div>
-                <div class="gallery-cell"></div>
-                <div class="gallery-cell"></div>
-                <div class="gallery-cell"></div>
-                <div class="gallery-cell"></div>
+            <!-- CAROUSEL -->
+            <div class="carousel">
+                <div class="card current-card">
+                    <img src="images/ben.png" alt="#">
+                    <h4>John Trentini, M.D., PH.D.</h4>
+                    <p>Emergency Medicine Resident, Air Force</p>
+                    <a href="#" class="btn-4">View Day</a>
+                </div>
+                <div class="card next-card">
+                    <img src="images/ben.png" alt="#">
+                    <h4>John Trentini, M.D., PH.D.</h4>
+                    <p>Emergency Medicine Resident, Air Force</p>
+                    <a href="#" class="btn-4">View Day</a>
+                </div>
+                <div class="card card-3 hidden"></div>
+                <div class="card card-4 hidden"></div>
+                <div class="card previous-card">
+                    <img src="images/ben.png" alt="#">
+                    <h4>John Trentini, M.D., PH.D.</h4>
+                    <p>Emergency Medicine Resident, Air Force</p>
+                    <a href="#" class="btn-4">View Day</a>
+                </div>
             </div>
+
+            <div class="slider-controls">
+                <a href=""><i class="fas fa-chevron-left fa-lg"></i></a>
+                <span class="slider-counter">1/5</span>
+                <a href=""><i class="fas fa-chevron-right fa-lg"></i></a>
+            </div>
+            
+
         </div>
+
+
         
     </section>
 
@@ -165,6 +188,7 @@
             <p>2021 Medicine + The Military</p>
         </div>
     </footer>
+
 
 </body>
 </html>

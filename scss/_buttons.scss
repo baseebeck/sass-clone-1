@@ -57,3 +57,21 @@
     }
    
 }
+
+.btn-4 {
+    @extend %btn;
+    background-color: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    padding: 12px 24px;
+    text-transform: none;
+
+    &:hover {
+        @include set-background(darken($primary-color, 10%));
+    }
+   
+}
