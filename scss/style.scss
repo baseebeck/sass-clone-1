@@ -121,13 +121,89 @@ p {
 
 #section-2 {
     @include set-background(#3E434A);
+    height: 850px;
 
-    h4 {
-        font-weight: 400;
-        color: #fff;
-        opacity: 0.8;
-        margin: 0.5rem 0;
+    .container {
+        padding: 4rem;
+        margin: 0 auto;
+        max-width: 1500px;
+
+        h4 {
+            font-weight: 400;
+            color: #fff;
+            opacity: 0.8;
+            margin: 0.5rem 0;
+        }
+    
+        .info-tabs {
+
+            .tab-nav-links {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+            }
+
+            li {
+                .inactive {
+                    @include set-background(lighten($dark-color, 10%));
+
+                    &:hover {
+                        @include set-background($light-color);
+                    }
+                }
+            }
+
+            a {
+                @include set-background($light-color);
+                display: block;
+                font-size: 0.7rem;
+                font-weight: 600;
+                padding: 1rem;
+                margin-right: 1rem;
+                text-align: center;
+                text-transform: uppercase;
+                width: auto;
+            }
+
+            .tab {
+                @include set-background($light-color);
+                display: flex;
+                flex-wrap: wrap;
+                height: 550px;
+                justify-content: center;
+
+                h4 {
+                    color: $primary-color;
+                    font-weight: 500;
+                }
+
+
+                &-info-l {
+                    padding: 3rem 2rem 0;
+                    width: 30%;
+
+                    p {
+                        color: lighten($dark-color, 20%);
+                        font-weight: 400;
+                        margin-top: 0.5rem;
+                    }
+                }
+                &-info-r {
+                    background: #f6f6f6;
+                    padding: 3rem 2rem 0;
+                    width: 70%;
+
+                    p {
+                        font-size: 0.95rem;
+                        margin-bottom: 1.5rem;
+                        max-width: 700px;
+                    }
+                }
+            }
+        }
     }
+
+
 }
 
 #section-3 {
@@ -138,6 +214,7 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
+        max-width: 1500px;
 
         h3 {
             color: $primary-color;
