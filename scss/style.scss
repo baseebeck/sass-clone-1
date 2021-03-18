@@ -144,6 +144,9 @@ p {
             }
 
             li {
+                @include set-background($light-color);
+                margin-right: 1rem;
+
                 .inactive {
                     @include set-background(lighten($dark-color, 10%));
 
@@ -159,7 +162,6 @@ p {
                 font-size: 0.7rem;
                 font-weight: 600;
                 padding: 1rem;
-                margin-right: 1rem;
                 text-align: center;
                 text-transform: uppercase;
                 width: auto;
@@ -214,7 +216,6 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
-        max-width: 1500px;
 
         h3 {
             color: $primary-color;
